@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <title>Login</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+                font-family: 'verdana';
+            }
+
+            body {
+                box-sizing: border-box;
+            }
+
+            #login {
+                background-color: #2274a5;
+                height: 1024px;
+            }
+
+            .container {
+                width: 300px;
+                height: 300px;
+                background-color: #e83f6f;
+                display: block;
+                position: relative;
+                margin: auto;
+                top: 100px;
+                box-shadow: 5px 8px #6A1D33;
+                border-radius: 5px;
+                clear: both;
+
+            }
+
+            .input-log {
+                display: block;
+                width: 80%;
+                margin: auto;
+                position: relative;
+                top: 50px;
+                padding-bottom: 17px;
+                margin-bottom: 50px;
+                text-align: center;
+                padding-top: 17px;
+                border-radius: 3px;
+                border: none;
+                box-shadow: 5px 6px;
+                font-size: 100%
+            }
+
+            .button-log {
+                margin: auto;
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                height: 70px;
+                border: none;
+                box-shadow: 5px 8px #133629;
+                background-color: #32936f;
+                color: white;
+                font-size: 120%;
+                border-radius: 5px;
+                border-top-left-radius: 0px;
+                border-top-right-radius: 0px;
+            }
+
+            .button-cad {
+                background-color: blue;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                width: 15%;
+
+                height: 70px;
+                border: none;
+                box-shadow: 5px 8px #0D2B3C;
+                background-color: #2274a5;
+                color: white;
+                font-size: 120%;
+                border-bottom-right-radius: 5px;   
+            }
+
+            .link {
+                text-align: center;
+                position: relative;
+                margin-top: 115px;
+                font-size: 80%;
+                display: block;
+                text-decoration: none;
+                color: #6A1D33;
+            }
+
+    </style>
+</head>
+
+<body>
+    <section id="login">
+        <div class="container">
+            <form action="/logged" method="post">
+                <input type="email" name="email" placeholder="Email" class="input-log">
+                <input type="password" name="password" placeholder="Password" class="input-log">
+                <button type="submit" class="button-log">Login</button>
+            </form>
+        </div>
+        <a href="/register" class="link">Register Now</a>
+    </section>
+</body>
+
+</html>
