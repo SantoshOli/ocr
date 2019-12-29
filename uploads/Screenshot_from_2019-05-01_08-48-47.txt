@@ -1,0 +1,11 @@
+However, we found out that unless our images are cleanly segmented Tesseract will give poor
+results. In the case of “noisy” input images, we'll ikely obtain better accuracy by training a
+custom machine learning model to recognize characters in our specific use case.
+
+Tesseract is best suited for situations with high resolution inputs where the foreground text is
+cleanly segmented from the background.
+
+Next week we'll learn how to access Tesseract via Python code, so stay tuned.
+
+To be notified when the next blog post on Tesseract goes live, be sure to enter your
+email address in the form below!

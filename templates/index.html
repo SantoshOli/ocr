@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Santosh OCR</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+
+        <style>
+            .body{
+                background-color: WhiteSmoke;
+                overflow: hidden;
+            }
+            .heading{
+                background-color: darkred;
+                height: 60px;
+                width: 100%;
+                margin-top: -20px;
+                width: 2000px;
+                margin-left: -20px;
+                font-family: verdana;
+            }
+            .text{
+                padding: 20px;
+                color: white;
+                margin-left: 300px;
+            }
+            .title{
+                font-size: 30px;
+                font-family: verdana;
+                color: darkred;
+                font-weight: bold;
+            }
+            
+            .context{
+                margin-left: 300px;
+            }
+            .image{
+                margin-left: 300px;
+            }
+            .text1{
+                font-size: 15px;
+                font-family: verdana;
+                font-weight: normal;
+                color: #222222;
+            }
+            hr{
+                margin-left: 250px;
+                margin-right:300px;
+            }
+            .form{
+                margin-left: 300px;
+            }
+            label{
+                font-family: verdana;
+            }
+            .form-group{
+                padding-top:20px;
+            }
+            .button{
+                padding: 7px;
+                font-family: verdana;
+                color: white;
+                background-color: darkred;
+                font-size: 14px;
+            }
+            .logout{
+                padding: 10px;
+                background-color: darkred;
+                color: white;
+                font-size: 14px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="heading">
+            <h2 class="text"> Santosh OCR </h2>
+        </div>
+        <div class="image">
+            <img src="{{url_for('static', filename='ocr_logo.jpeg')}}">
+        </div>
+        <div class="context">
+            <h1 class="title"> FREE ONLINE OCR SERVICE </h1>
+            <h4 class="text1"> Use Optical Character Recognition application online. </h4>
+
+        </div>
+        
+        <hr>
+
+        <div class="context">
+                <h1 class="title"> CONVERT SCANNED COPY TO TEXT </h1>
+                <h4 class="text1"> Extract text from  images (JPG, BMP, TIFF, GIF) and convert into editable Word and Text output formats </h4>
+    
+        </div>
+
+        <hr>
+
+        <div class="implementation">
+
+            <form class="form" action="/upload" enctype="multipart/form-data" method="post">
+                <div class="form-group">
+                    <label> Upload a File: </label> &nbsp;
+                    <input type="file" class="form-file" name="file">
+                </div>
+                <div class="text1">
+                    <p>A file will be downloaded after you submit the file. That file will contain recognized characters from the image.</p>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="button">Submit</button>
+                    &nbsp &nbsp &nbsp &nbsp
+                    <a href="/logout" class="logout">Logout</a>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
